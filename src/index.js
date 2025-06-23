@@ -45,3 +45,29 @@ logoutBtn.addEventListener("click", async () => {
   await signOut(auth);
   window.location.href = "register.html";
 });
+
+// index.js
+const burger = document.getElementById('burger');
+const sideMenu = document.getElementById('sideMenu');
+const overlay = document.getElementById('menuOverlay');
+const closeBtn = document.getElementById('closeMenuBtn');
+
+burger.addEventListener('click', () => {
+  sideMenu.classList.add('open');
+  overlay.classList.add('active');
+});
+
+closeBtn.addEventListener('click', () => {
+  sideMenu.classList.remove('open');
+  overlay.classList.remove('active');
+});
+
+overlay.addEventListener('click', () => {
+  sideMenu.classList.remove('open');
+  overlay.classList.remove('active');
+});
+
+function toggleDropdown() {
+  const dropdown = document.getElementById('mobileDropdown');
+  dropdown.classList.toggle('open');
+}

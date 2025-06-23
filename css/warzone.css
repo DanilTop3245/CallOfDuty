@@ -255,6 +255,26 @@ header {
     color: #ccc;
 }
 
+.video-container {
+    width: 100%;
+    max-width: 560px;
+    /* максимум по дизайну */
+    margin: 20px auto 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 аспект */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: none;
+}
+
 /*Rivals section*/
 .rivals-section {
     background: url('../img/rivals_bg.webp') no-repeat center center/cover;
@@ -653,4 +673,604 @@ footer {
 .footer-lang img {
     margin-top: 10px;
     height: 15px;
+}
+
+/* ============== HEADER ============== */
+header {
+    background-color: #474747a8;
+    margin: 0 200px;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-item .nav-link {
+    pointer-events: none;
+    color: white;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    z-index: 1000;
+    list-style: none;
+    border-radius: 4px;
+}
+
+.dropdown a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #2c2c2c;
+}
+
+.cod-logo {
+    height: 20px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.buy-btn {
+    background: url("../img/CerberusBtnAnim.gif") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: box-shadow 0.4s;
+}
+
+.buy-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 92, 0, 1);
+}
+
+/* ============== BURGER & SIDE MENU ============== */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: #222;
+    padding: 20px;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.7);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+
+.menu-overlay.active {
+    display: block;
+}
+
+.side-menu-close {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+.side-menu .nav-list {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.side-menu .dropdown {
+    display: none;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.side-menu .dropdown.open {
+    display: flex;
+}
+
+.plus-icon {
+    margin-left: auto;
+    cursor: pointer;
+    color: #ccc;
+}
+
+/* ============== MEDIA QUERIES ============== */
+@media (max-width: 1023px) {
+    header {
+        margin: 0;
+        border-radius: 0;
+        padding: 10px 20px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-desctop,
+    .buy-btn {
+        display: none !important;
+    }
+
+    .user-actions {
+        margin-left: auto;
+    }
+
+    .main-nav {
+        justify-content: space-between;
+    }
+
+    .crown-phrase {
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+
+    .phrase-text {
+        width: 100%;
+        padding-top: 180px;
+    }
+
+    .phrase-title {
+        font-size: 48px;
+    }
+
+    .phrase-info {
+        font-size: 20px;
+    }
+
+    .xbox-game-pass {
+        padding: 20px;
+    }
+
+    .xbox-game-pass-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cod-news-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .news h2 {
+        font-size: 24px;
+    }
+
+    .footer-logos {
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer-age img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .phrase-title {
+        font-size: 36px;
+    }
+
+    .phrase-info {
+        font-size: 18px;
+    }
+
+    .highlight-text h2 {
+        font-size: 24px;
+    }
+
+    .highlight-text p {
+        font-size: 12px;
+    }
+
+    .card-text h3 {
+        font-size: 16px;
+    }
+}
+
+/* ==================== АДАПТИВ ==================== */
+
+/* Планшеты (от 768px до 1024px) */
+@media (max-width: 1024px) {
+    body {
+        background-position: center top;
+    }
+
+    .free-play-now {
+        margin-top: 150px;
+        padding: 60px 15px;
+    }
+
+    .free-play-now h2 {
+        font-size: 36px;
+    }
+
+    .warzone {
+        font-size: 48px;
+    }
+
+    .play-now {
+        font-size: 24px;
+        padding: 10px 12px;
+    }
+
+    .platform-buttons {
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .description {
+        max-width: 90%;
+        font-size: 13px;
+    }
+
+    .rivals-content {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .rivals-text,
+    .rivals-image {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .rivals-title {
+        font-size: 2.4rem;
+    }
+
+    .rivals-description {
+        font-size: 0.95rem;
+    }
+
+    .rivals-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .showdown-section {
+        padding: 3rem 1rem;
+    }
+
+    .showdown-title {
+        font-size: 2rem;
+    }
+
+    .slider {
+        width: 90vw;
+        height: 350px;
+    }
+
+    .slide {
+        width: 70%;
+        height: 100%;
+    }
+
+    .caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .caption h3 {
+        font-size: 1rem;
+    }
+
+    .new-bp-and-blackcell>.rivals-content {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .blackcell-text,
+    .blackcell-image {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .blackcell-title {
+        font-size: 2.4rem;
+    }
+
+    .blackcell-description {
+        font-size: 0.95rem;
+    }
+
+    .blackcell-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .road-map {
+        padding: 40px 15px;
+    }
+
+    .road-map-title {
+        font-size: 2.4rem;
+    }
+
+    .road-map-description {
+        font-size: 0.95rem;
+        max-width: 90%;
+        margin: 0 auto 1rem;
+    }
+
+    .road-map-image {
+        width: 100%;
+    }
+}
+
+/* Смартфоны (до 767px) */
+@media (max-width: 767px) {
+    .free-play-now {
+        margin-top: 100px;
+        padding: 40px 10px;
+    }
+
+    .free-play-now h2 {
+        font-size: 28px;
+    }
+
+    .warzone {
+        font-size: 36px;
+    }
+
+    .play-now {
+        font-size: 20px;
+        padding: 8px 10px;
+    }
+
+    .platform-buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .description {
+        font-size: 12px;
+        max-width: 95%;
+    }
+
+    .rivals-content {
+        flex-direction: column;
+        max-width: 95%;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .rivals-title {
+        font-size: 1.8rem;
+    }
+
+    .rivals-description {
+        font-size: 0.85rem;
+    }
+
+    .rivals-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .showdown-section {
+        padding: 2rem 0.5rem;
+    }
+
+    .showdown-title {
+        font-size: 1.8rem;
+    }
+
+    .slider {
+        width: 95vw;
+        height: 280px;
+    }
+
+    .slide {
+        width: 80%;
+    }
+
+    .caption h2 {
+        font-size: 1.4rem;
+    }
+
+    .caption h3 {
+        font-size: 0.9rem;
+    }
+
+    .new-bp-and-blackcell>.rivals-content {
+        flex-direction: column;
+        max-width: 95%;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .blackcell-title {
+        font-size: 1.8rem;
+    }
+
+    .blackcell-description {
+        font-size: 0.85rem;
+    }
+
+    .blackcell-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .road-map {
+        padding: 30px 10px;
+    }
+
+    .road-map-title {
+        font-size: 1.8rem;
+    }
+
+    .road-map-description {
+        font-size: 0.85rem;
+    }
+
+    .road-map-image {
+        width: 100%;
+    }
+}
+
+/* Очень маленькие экраны (до 400px) */
+@media (max-width: 400px) {
+    .free-play-now h2 {
+        font-size: 24px;
+    }
+
+    .warzone {
+        font-size: 28px;
+    }
+
+    .play-now {
+        font-size: 18px;
+    }
+
+    .platform-buttons {
+        gap: 8px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 11px;
+    }
+
+    .rivals-title,
+    .blackcell-title,
+    .road-map-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-container {
+        max-width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    .slider {
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .slides {
+        max-width: 100%;
+        overflow: visible;
+        /* чтобы слайды внутри могли анимироваться */
+    }
+
+    .blackcell-content {
+        padding: 10px
+    }
 }
