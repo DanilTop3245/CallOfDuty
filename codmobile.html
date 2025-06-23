@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Of Duty: Mobile</title>
+    <link rel="stylesheet" href="./css/codmobile.css" />
+  </head>
+  <body>
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="./img/codm-hero-video-desktop.mp4" type="video/mp4" />
+      Ваш браузер не поддерживает видео.
+    </video>
+    <header>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="logo">
+            <a href="./index.html">
+              <img
+                src="./img/cod-logo.svg"
+                alt="Call of Duty"
+                class="cod-logo"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Игры</a>
+            <ul class="dropdown">
+              <li><a href="./bo6.html">BLACK OPS 6</a></li>
+              <li><a href="./warzone.html">COD: WARZONE</a></li>
+              <li><a href="./codmobile.html">CALL OF DUTY MOBILE</a></li>
+            </ul>
+          </li>
+          <li><a href="./store.html">Store</a></li>
+          <li>
+            <a href="https://support.activision.com/" target="_blank"
+              >Поддержка</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.xbox.com/uk-UA/games/store/game-pass/CFQ7TTC0KGQ8?rpid=9N201KQXS5BM"
+              >Xbox Game Pass</a
+            >
+          </li>
+        </ul>
+        <div class="user-actions">
+          <div class="user-menu" id="userMenu" style="position: relative">
+            <a href="register.html" class="login-btn"
+              ><span class="icon">👤</span> Вход</a
+            >
+            <div class="dropdown-menu" id="dropdownMenu" style="display: none">
+              <button id="logoutBtn">Выйти</button>
+            </div>
+          </div>
+          <a
+            href="https://store.steampowered.com/app/2933620/Call_of_Duty_Black_Ops_6/"
+            class="buy-btn"
+            >ПРИОБРЕСТИ BLACK OPS 6</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="cod-section">
+        <!-- Фоновое видео -->
+
+        <!-- Контент -->
+        <div class="cod-content">
+          <img src="./img/CODM_Logo.svg" alt="" width="200" />
+          <p class="play-free">ИГРАТЬ БЕСПЛАТНО</p>
+
+          <div class="store-buttons">
+            <a
+              href="https://apps.apple.com/ru/app/call-of-duty-mobile/id1287282214"
+              target="_blank"
+              style="color: #00000000"
+            >
+              <img src="./img/appstore.png" alt="App Store" />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter&hl=ru"
+              target="_blank"
+            >
+              <img src="./img/googleplay.png" alt="Google Play" />
+            </a>
+          </div>
+
+          <a
+            href="https://youtu.be/n4b8FRUDNZo"
+            class="watch-trailer"
+            target="_blank"
+            >СМОТРЕТЬ ТРЕЙЛЕР</a
+          >
+        </div>
+      </section>
+      <!--Game modes-->
+      <section class="game-modes">
+        <h2 class="section-title">РЕЖИМЫ ИГРЫ</h2>
+        <p class="section-subtitle">
+          Вся динамика Call of Duty у вас в кармане
+        </p>
+
+        <div class="modes-wrapper">
+          <div class="mode mode-battle">
+            <div class="mode-info">
+              <h3>КОРОЛЕВСКАЯ БИТВА</h3>
+              <p>Переживите битву 100 игроков</p>
+            </div>
+          </div>
+
+          <div class="mode mode-multiplayer">
+            <div class="mode-info">
+              <h3>СЕТЕВАЯ ИГРА</h3>
+              <p>Традиционные командные бои 6x6</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="showdown-section">
+        <div class="showdown-overlay">
+          <h2 class="showdown-title">
+            КЛАССИЧЕСКИЕ СЕТЕВЫЕ КАРТЫ
+            <p class="desc">
+              Сыграйте на ваших любимых картах из различных частей Call of Duty
+            </p>
+          </h2>
+        </div>
+
+        <div class="slider">
+          <div class="slides">
+            <div
+              class="slide"
+              style="background-image: url('./img/maps-crash.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('./img/maps-nuketown-2.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('./img/maps-hijacked.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('./img/maps-killhouse.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('./img/maps-firing-range.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('./img/maps-crossfire.jpg')"
+            ></div>
+          </div>
+          <button class="nav left">&#10094;</button>
+          <button class="nav right">&#10095;</button>
+
+          <div class="caption">
+            <h2 id="title">КРЭШ</h2>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 100px">
+        <h2 class="hero-title">КУЛЬТОВЫЕ ПЕРСОНАЖИ</h2>
+        <p class="sub-hero-title">
+          Играйте за персонажей Call of Duty: Black Ops и Modern Warfare
+        </p>
+        <div id="hero" class="hero"></div>
+        <!-- Карточки будут добавлены сюда JS -->
+      </section>
+      <section class="nh-news-headlines">
+        <div class="nh-news-text">
+          <h3 class="nh-section-title">НОВОСТИ И ЗАГОЛОВКИ</h3>
+
+          <div class="nh-news-item">
+            <span class="nh-arrow">^</span>
+            <p class="nh-section-subtitle">
+              Unlock the Katana Operator Skill in Call of Duty®: Mobile
+            </p>
+          </div>
+
+          <div class="nh-news-item">
+            <span class="nh-arrow">^</span>
+            <p class="nh-section-subtitle">
+              Call of Duty® Mobile: Tips for Beating the Heat during the Days of
+              Summer Event
+            </p>
+          </div>
+
+          <div class="nh-news-item">
+            <span class="nh-arrow">^</span>
+            <p class="nh-section-subtitle">Earn More Rewards in The Forge</p>
+          </div>
+
+          <div class="nh-news-item">
+            <span class="nh-arrow">^</span>
+            <p class="nh-section-subtitle">Solstice Awakened</p>
+          </div>
+        </div>
+
+        <div class="nh-news-img">
+          <img src="./img/newsImg.jpg" />
+        </div>
+      </section>
+
+      <section class="download-game">
+        <div class="cont-download-section">
+          <img
+            src="./img/cod-m-logo-dark-2023.svg"
+            alt=""
+            class="download-game-logo"
+          />
+          <h2 class="download-game-title">Скачать</h2>
+          <div class="download-platform">
+            <a
+              href="https://apps.apple.com/ru/app/call-of-duty-mobile/id1287282214"
+              target="_blank"
+              style="color: #00000000"
+            >
+              <img src="./img/appstore.png" alt="App Store" />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter&hl=ru"
+              target="_blank"
+            >
+              <img src="./img/googleplay.png" alt="Google Play" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-links">
+          <span>ПРАВОВЫЕ ПОЛОЖЕНИЯ</span> |
+          <span>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</span> |
+          <span>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</span> | <span>КАРЬЕРА</span> |
+          <span>ПОЛИТИКА О ФАЙЛАХ COOKIE</span> |
+          <span>ПОДДЕРЖКА</span>
+        </div>
+        <div class="footer-sub">
+          <span>ПРАВИЛА ПОВЕДЕНИЯ</span> |
+          <span>ВАШ ВЫБОР КОНФИДЕНЦИАЛЬНОСТИ 🔵</span>
+        </div>
+      </div>
+      <div class="footer-logo-section">
+        <div class="footer-logos">
+          <a
+            href="https://www.activision.com/?utm_source=404&utm_medium=redirect&utm_campaign=092722"
+            ><img src="./img/activision.png" alt="Activision"
+          /></a>
+          <a href="https://www.treyarch.com/"
+            ><img src="./img/treyarch.png" alt="Treyarch"
+          /></a>
+          <a href="https://www.sledgehammergames.com/"
+            ><img src="./img/sledgehammer.png" alt="Sledgehammer"
+          /></a>
+          <a href="https://www.highmoonstudios.com/"
+            ><img src="./img/highmoon.png" alt="High Moon"
+          /></a>
+          <a href="https://www.digital-legends.com/"
+            ><img src="./img/digitallegend.png" alt="Digital Legends"
+          /></a>
+          <a href="https://www.activision.com/company/locations"
+            ><img src="./img/shanghai.png" alt="Shanghai Studio"
+          /></a>
+        </div>
+
+        <div class="footer-logos">
+          <a href="https://www.infinityward.com/"
+            ><img src="./img/infinityward.png" alt="Infinity Ward"
+          /></a>
+          <a href="http://ravensoftware.com/"
+            ><img src="./img/raven.png" alt="Raven Software"
+          /></a>
+          <a href="https://www.solidstate.com/"
+            ><img src="./img/solidstate.png" alt="Solid State Studios"
+          /></a>
+          <a href="https://www.demonware.net/"
+            ><img src="./img/demonware.png" alt="Demonware"
+          /></a>
+          <a href="https://beenox.com/"
+            ><img src="./img/beenox.png" alt="Beenox"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-age">
+        <img src="./img/18plus.png" alt="18+" />
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">
+          © 2024-2025 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL
+          OF DUTY LEAGUE, CALL OF DUTY MODERN WARFARE, MODERN WARFARE, CALL OF
+          DUTY BLACK OPS, CALL OF DUTY WARZONE, WARZONE и CALL OF DUTY VANGUARD
+          являются зарегистрированными товарными знаками Activision Publishing,
+          Inc. Все остальные товарные знаки и торговые наименования принадлежат
+          соответствующим владельцам.
+        </p>
+        <div class="footer-lang"></div>
+      </div>
+    </footer>
+    <script src="./src/codmobile.js" type="module" defer></script>
+    <script src="./src/index.js" type="module" defer></script>
+  </body>
+</html>

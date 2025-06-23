@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warzone</title>
+    <link rel="stylesheet" href="./css/warzone.css" />
+  </head>
+  <body>
+    <!--Header with navigation bar-->
+    <header>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="logo">
+            <a href="./index.html">
+              <img
+                src="./img/cod-logo.svg"
+                alt="Call of Duty"
+                class="cod-logo"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Игры</a>
+            <ul class="dropdown">
+              <li><a href="./bo6.html">BLACK OPS 6</a></li>
+              <li><a href="./warzone.html">COD: WARZONE</a></li>
+              <li><a href="./codmobile.html">CALL OF DUTY MOBILE</a></li>
+            </ul>
+          </li>
+          <li><a href="./store.html">Store</a></li>
+          <li>
+            <a href="https://support.activision.com/" target="_blank"
+              >Поддержка</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.xbox.com/uk-UA/games/store/game-pass/CFQ7TTC0KGQ8?rpid=9N201KQXS5BM"
+              >Xbox Game Pass</a
+            >
+          </li>
+        </ul>
+        <div class="user-actions">
+          <div class="user-menu" id="userMenu" style="position: relative">
+            <a href="register.html" class="login-btn"
+              ><span class="icon">👤</span> Вход</a
+            >
+            <div class="dropdown-menu" id="dropdownMenu" style="display: none">
+              <button id="logoutBtn">Выйти</button>
+            </div>
+          </div>
+          <a
+            href="https://store.steampowered.com/app/2933620/Call_of_Duty_Black_Ops_6/"
+            class="buy-btn"
+            >ПРИОБРЕСТИ BLACK OPS 6</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="free-play-now">
+        <div class="background-overlay">
+          <div class="content">
+            <img src="./img/cod-warzone-logo.png" alt="" width="400" />
+            <br />
+            <button class="play-now">PLAY FREE NOW</button>
+            <div class="platform-buttons">
+              <a
+                class="btn xbox"
+                target="_blank"
+                href="https://www.xbox.com/en-US/games/store/call-of-duty-warzone-2/9NNFG8BQRCXL"
+              >
+                <img src="./img/xbox-logo-white.png" alt="" width="24" /> XBOX
+              </a>
+              <a
+                class="btn windows"
+                target="_blank"
+                href="https://www.microsoft.com/store/productId/9NNFG8BQRCXL?ocid=pdpshare"
+              >
+                <img src="./img/microsoft-icon.png" alt="" width="24" /> WINDOWS
+              </a>
+              <a
+                class="btn battlenet"
+                target="_blank"
+                href="https://www.blizzard.com/download/confirmation?product=codwz2"
+              >
+                <img src="./img/bnet-white-logo.png" alt="" width="24" />
+                BATTLE.NET
+              </a>
+              <a
+                class="btn playstation"
+                target="_blank"
+                href="https://store.playstation.com/en-us/product/UP0002-PPSA01649_00-CODWZ2BUNDLE0001/"
+              >
+                <img src="./img/ps-logo-white.png" alt="" width="24" />
+                PLAYSTATION
+              </a>
+              <a
+                class="btn steam"
+                target="_blank"
+                href="https://store.steampowered.com/app/1962663"
+              >
+                <img src="./img/steam-logo-white.png" alt="" width="24" /> STEAM
+              </a>
+            </div>
+            <p class="description">
+              Look up. The massive transformation of Downtown Verdansk begins at
+              The Overlook, the sprawling skyscraper at its center. Whether you
+              walk in through the lobby and shut it behind you, zipline directly
+              into the tower, or come in via cranes at the roof, you'll be able
+              to immediately jump into the action.
+            </p>
+          </div>
+        </div>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/AYuISufev7w?si=jeAHgPI324_FPUWv"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section class="rivals-section">
+        <div class="rivals-content">
+          <div class="rivals-text">
+            <p class="rivals-label">НОВОЕ СОБЫТИЕ</p>
+            <h2 class="rivals-title">
+              ПРОТИВНИКИ
+              <span><img src="./img/space.png" class="rivals-strike" /></span>
+            </h2>
+            <p class="rivals-description">
+              Враги становятся союзниками, когда Шов использует свои навыки
+              расшифровки, чтобы помочь раскрыть настоящие имена последних
+              кротов "Пантеона" в ЦРУ. Зарабатывайте опыт в любом режиме игры,
+              чтобы раскрыть тайну, а также получить новые чертежи оружия, новую
+              серию очков и модуль.
+            </p>
+          </div>
+          <div class="rivals-image">
+            <img src="./img/rivals.jpg" alt="Rivals Event" />
+          </div>
+        </div>
+      </section>
+
+      <section class="showdown-section">
+        <div class="showdown-overlay">
+          <h2 class="showdown-title">
+            ФУНКЦИИ ВРЕМЕННОГО РЕЖИМА "СХВАТКА" В СЕЗОНЕ
+            <span class="highlighted">04</span>
+          </h2>
+        </div>
+
+        <div class="slider">
+          <div class="slides">
+            <div
+              class="slide"
+              style="background-image: url('./img/gun.webp')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('./img/bomb.webp')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('./img/door.webp')"
+            ></div>
+          </div>
+          <button class="nav left">&#10094;</button>
+          <button class="nav right">&#10095;</button>
+
+          <div class="caption">
+            <h2 id="title">CHAMONIX</h2>
+          </div>
+        </div>
+      </section>
+      <section class="new-bp-and-blackcell">
+        <div class="blackcell-content blackcell">
+          <div class="blackcell-text">
+            <h2 class="blackcell-title">
+              BLACKCELL
+              <span
+                ><img src="./img/space.png" class="blackcell-strike"
+              /></span>
+            </h2>
+            <p class="blackcell-description">
+              С BlackCell получите эксклюзивный доступ к странице BlackCell и
+              более 7000 COD Points на контент*. Плюс получите дополнительный
+              10%-ный бонус к опыту игрока и оружия за каждую покупку BlackCell,
+              сделанную после первой. Этот бонус лояльности BlackCell достигает
+              максимума в 50% только для сезонов Black Ops 6.
+            </p>
+            <a
+              href="https://store.steampowered.com/app/3203390/Call_of_Duty_Black_Ops_6__CHernyj_sektor_sezon_04/"
+              target="_blank"
+              class="blackcell-button"
+              >ПОЛУЧИТЕ BLACKCELL ›</a
+            >
+          </div>
+          <div class="blackcell-image">
+            <img src="./img/WZ_S4_BlackCell.webp" alt="Rivals Event" />
+          </div>
+        </div>
+      </section>
+      <section class="road-map">
+        <div class="road-map-content">
+          <h2 class="road-map-title">Дорога впереди</h2>
+          <p class="road-map-description">
+            Ознакомьтесь с дорожной картой сезона 04, чтобы узнать о новых
+            функциях, обновлениях и контенте, которые будут доступны в Warzone.
+          </p>
+          <img
+            src="./img/WZ_S4_Roadmap_EN-US.webp"
+            alt="Roadmap for Season 04"
+            class="road-map-image"
+            width="90%"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-links">
+          <span>ПРАВОВЫЕ ПОЛОЖЕНИЯ</span> |
+          <span>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</span> |
+          <span>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</span> | <span>КАРЬЕРА</span> |
+          <span>ПОЛИТИКА О ФАЙЛАХ COOKIE</span> |
+          <span>ПОДДЕРЖКА</span>
+        </div>
+        <div class="footer-sub">
+          <span>ПРАВИЛА ПОВЕДЕНИЯ</span> |
+          <span>ВАШ ВЫБОР КОНФИДЕНЦИАЛЬНОСТИ 🔵</span>
+        </div>
+      </div>
+      <div class="footer-logo-section">
+        <div class="footer-logos">
+          <a
+            href="https://www.activision.com/?utm_source=404&utm_medium=redirect&utm_campaign=092722"
+            ><img src="./img/activision.png" alt="Activision"
+          /></a>
+          <a href="https://www.treyarch.com/"
+            ><img src="./img/treyarch.png" alt="Treyarch"
+          /></a>
+          <a href="https://www.sledgehammergames.com/"
+            ><img src="./img/sledgehammer.png" alt="Sledgehammer"
+          /></a>
+          <a href="https://www.highmoonstudios.com/"
+            ><img src="./img/highmoon.png" alt="High Moon"
+          /></a>
+          <a href="https://www.digital-legends.com/"
+            ><img src="./img/digitallegend.png" alt="Digital Legends"
+          /></a>
+          <a href="https://www.activision.com/company/locations"
+            ><img src="./img/shanghai.png" alt="Shanghai Studio"
+          /></a>
+        </div>
+
+        <div class="footer-logos">
+          <a href="https://www.infinityward.com/"
+            ><img src="./img/infinityward.png" alt="Infinity Ward"
+          /></a>
+          <a href="http://ravensoftware.com/"
+            ><img src="./img/raven.png" alt="Raven Software"
+          /></a>
+          <a href="https://www.solidstate.com/"
+            ><img src="./img/solidstate.png" alt="Solid State Studios"
+          /></a>
+          <a href="https://www.demonware.net/"
+            ><img src="./img/demonware.png" alt="Demonware"
+          /></a>
+          <a href="https://beenox.com/"
+            ><img src="./img/beenox.png" alt="Beenox"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-age">
+        <img src="./img/18plus.png" alt="18+" />
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">
+          © 2024-2025 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL
+          OF DUTY LEAGUE, CALL OF DUTY MODERN WARFARE, MODERN WARFARE, CALL OF
+          DUTY BLACK OPS, CALL OF DUTY WARZONE, WARZONE и CALL OF DUTY VANGUARD
+          являются зарегистрированными товарными знаками Activision Publishing,
+          Inc. Все остальные товарные знаки и торговые наименования принадлежат
+          соответствующим владельцам.
+        </p>
+        <div class="footer-lang"></div>
+      </div>
+    </footer>
+    <script src="./src/warzone.js" type="module" defer></script>
+    <script src="./src/index.js" type="module" defer></script>
+  </body>
+</html>

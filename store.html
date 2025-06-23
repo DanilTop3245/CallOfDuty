@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="./css/store.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="logo">
+            <a href="./index.html">
+              <img
+                src="./img/cod-logo.svg"
+                alt="Call of Duty"
+                class="cod-logo"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Игры</a>
+            <ul class="dropdown">
+              <li><a href="./bo6.html">BLACK OPS 6</a></li>
+              <li><a href="./warzone.html">COD: WARZONE</a></li>
+              <li><a href="./codmobile.html">CALL OF DUTY MOBILE</a></li>
+            </ul>
+          </li>
+          <li><a href="./store.html">Store</a></li>
+          <li>
+            <a href="https://support.activision.com/" target="_blank"
+              >Поддержка</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.xbox.com/uk-UA/games/store/game-pass/CFQ7TTC0KGQ8?rpid=9N201KQXS5BM"
+              >Xbox Game Pass</a
+            >
+          </li>
+        </ul>
+        <div class="user-actions">
+          <div class="user-menu" id="userMenu" style="position: relative">
+            <a href="register.html" class="login-btn"
+              ><span class="icon">👤</span> Вход</a
+            >
+            <div class="dropdown-menu" id="dropdownMenu" style="display: none">
+              <button id="logoutBtn">Выйти</button>
+            </div>
+          </div>
+          <a
+            href="https://store.steampowered.com/app/2933620/Call_of_Duty_Black_Ops_6/"
+            class="buy-btn"
+            >ПРИОБРЕСТИ BLACK OPS 6</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="games">
+        <div class="cont-games">
+          <h2 class="games-title">ИГРЫ</h2>
+          <div class="general-games">
+            <!-- КАРТОЧКА 1 -->
+            <div class="container-game" data-game="bo6">
+              <div class="image-wrapper">
+                <img
+                  src="./img/BO6_PLPCard_Hero.webp"
+                  alt="Black Ops 6"
+                  class="game-img"
+                />
+              </div>
+              <div class="game-info">
+                <div class="discount-label">Скидка до 45%</div>
+                <div class="game-title">Call of Duty: Black Ops 6</div>
+                <div class="platform-icons">
+                  <img
+                    src="./img/PlatformIcon-microsoft.5e342052.svg"
+                    alt="PC"
+                  />
+                  <img
+                    src="./img/PlatformIcon-battlenet.d799bce3.svg"
+                    alt="PC"
+                  />
+                  <img src="./img/PlatformIcon-xbox.ec3f5924.svg" alt="Xbox" />
+                  <img src="./img/PlatformIcon-ps.be51c8e4.svg" alt="PS" />
+                  <img
+                    src="./img/PlatformIcon-steam.228d9456.svg"
+                    alt="Steam"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- КАРТОЧКА 2 -->
+            <div class="container-game" data-game="warzone">
+              <div class="image-wrapper">
+                <img
+                  src="./img/GamesPLP_WZ.webp"
+                  alt="Warzone"
+                  class="game-img"
+                />
+              </div>
+              <div class="game-info">
+                <div class="free-label">Бесплатный доступ</div>
+                <div class="game-title">Call of Duty: Warzone</div>
+                <div class="platform-icons">
+                  <img
+                    src="./img/PlatformIcon-microsoft.5e342052.svg"
+                    alt="PC"
+                  />
+                  <img
+                    src="./img/PlatformIcon-battlenet.d799bce3.svg"
+                    alt="PC"
+                  />
+                  <img src="./img/PlatformIcon-xbox.ec3f5924.svg" alt="Xbox" />
+                  <img src="./img/PlatformIcon-ps.be51c8e4.svg" alt="PS" />
+                  <img
+                    src="./img/PlatformIcon-steam.228d9456.svg"
+                    alt="Steam"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- КАРТОЧКА 3 -->
+            <div class="container-game" data-game="mwiii">
+              <div class="image-wrapper">
+                <img
+                  src="./img/GamesPLP_MWIII.webp"
+                  alt="Modern Warfare III"
+                  class="game-img"
+                />
+              </div>
+              <div class="game-info">
+                <div class="discount-label">Скидка до 50%</div>
+                <div class="game-title">Call of Duty: Modern Warfare III</div>
+                <div class="platform-icons">
+                  <img
+                    src="./img/PlatformIcon-microsoft.5e342052.svg"
+                    alt="PC"
+                  />
+                  <img
+                    src="./img/PlatformIcon-battlenet.d799bce3.svg"
+                    alt="PC"
+                  />
+                  <img src="./img/PlatformIcon-xbox.ec3f5924.svg" alt="Xbox" />
+                  <img src="./img/PlatformIcon-ps.be51c8e4.svg" alt="PS" />
+                  <img
+                    src="./img/PlatformIcon-steam.228d9456.svg"
+                    alt="Steam"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- КАРТОЧКА 4 -->
+            <div class="container-game" data-game="mwii">
+              <div class="image-wrapper">
+                <img
+                  src="./img/GamesPLP_MWII.webp"
+                  alt="Modern Warfare II"
+                  class="game-img"
+                />
+              </div>
+              <div class="game-info">
+                <div class="discount-label">Скидка до 50%</div>
+                <div class="game-title">Call of Duty: Modern Warfare II</div>
+                <div class="platform-icons">
+                  <img
+                    src="./img/PlatformIcon-microsoft.5e342052.svg"
+                    alt="PC"
+                  />
+                  <img
+                    src="./img/PlatformIcon-battlenet.d799bce3.svg"
+                    alt="PC"
+                  />
+                  <img src="./img/PlatformIcon-xbox.ec3f5924.svg" alt="Xbox" />
+                  <img src="./img/PlatformIcon-ps.be51c8e4.svg" alt="PS" />
+                  <img
+                    src="./img/PlatformIcon-steam.228d9456.svg"
+                    alt="Steam"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- КАРТОЧКА 5 -->
+            <div class="container-game" data-game="vanguard">
+              <div class="image-wrapper">
+                <img
+                  src="./img/GamesPLP_Vanguard.webp"
+                  alt="Vanguard"
+                  class="game-img"
+                />
+              </div>
+              <div class="game-info">
+                <div class="discount-label">Скидка до 50%</div>
+                <div class="game-title">Call of Duty: Vanguard</div>
+                <div class="platform-icons">
+                  <img
+                    src="./img/PlatformIcon-battlenet.d799bce3.svg"
+                    alt="PC"
+                  />
+                  <img src="./img/PlatformIcon-xbox.ec3f5924.svg" alt="Xbox" />
+                  <img src="./img/PlatformIcon-ps.be51c8e4.svg" alt="PS" />
+                  <img
+                    src="./img/PlatformIcon-steam.228d9456.svg"
+                    alt="Steam"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- КАРТОЧКА 6 -->
+            <div class="container-game" data-game="codm">
+              <div class="image-wrapper">
+                <img
+                  src="./img/GamesPLP_CODM.webp"
+                  alt="COD Mobile"
+                  class="game-img"
+                />
+              </div>
+              <div class="game-info">
+                <div class="free-label">Бесплатный доступ</div>
+                <div class="game-title">Call of Duty: COD Mobile</div>
+                <div class="platform-icons">
+                  <img src="./img/PlatformIcon-apple.d775afcf.svg" alt="Xbox" />
+                  <img
+                    src="./img/PlatformIcon-googleplay.895cc516.svg"
+                    alt="Steam"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- МОДАЛКА -->
+        <div class="modal-overlay" id="modal">
+          <div class="modal-close" onclick="closeModal()">×</div>
+          <div class="modal-title" id="modal-title">Скачать игру</div>
+          <div class="modal-links" id="modal-links"></div>
+        </div>
+      </section>
+      <section class="game-packs">
+        <div class="cont-games">
+          <h2 class="games-title">НАБОРЫ</h2>
+          <div class="packs-filter">
+            <button class="active" data-filter="all">Все</button>
+            <button data-filter="tracer">Трейсеры</button>
+            <button data-filter="starter">Стартовые</button>
+            <button data-filter="team">Команды</button>
+          </div>
+          <div class="packs-grid">
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_14311_goblin_shark.webp" alt="Голодная мако" />
+              <div class="pack-info">
+                <h3>ГОЛОДНАЯ МАКО</h3>
+                <p>2 400 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_14307_cel_shaded_noir.webp" alt="Чернила и дым" />
+              <div class="pack-info">
+                <h3>ЧЕРНИЛА И ДЫМ</h3>
+                <p>3 000 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_14309_grim_reaper.webp" alt="Взлом системы" />
+              <div class="pack-info">
+                <h3>ВЗЛОМ СИСТЕМЫ</h3>
+                <p>2 400 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_14306_3d_printer.webp" alt="Ремесло разведчика" />
+              <div class="pack-info">
+                <h3>РЕМЕСЛО РАЗВЕДЧИКА</h3>
+                <p>3 000 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_12364_aerospace_ops.webp" alt="Свалилось с неба" />
+              <div class="pack-info">
+                <h3>СВАЛИЛОСЬ С НЕБА</h3>
+                <p>1 300 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_12359_hacker.webp" alt="Кибервзлом" />
+              <div class="pack-info">
+                <h3>КИБЕРВЗЛОМ</h3>
+                <p>1 200 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_12357_red_lacquer.webp" alt="Прочный панцирь" />
+              <div class="pack-info">
+                <h3>ПРОЧНЫЙ ПАНЦИРЬ</h3>
+                <p>1 200 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_12338_arctic.webp" alt="Абсолютный ноль" />
+              <div class="pack-info">
+                <h3>АБСОЛЮТНЫЙ НОЛЬ</h3>
+                <p>1 300 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="starter">
+              <img src="./img/cer_bundle_billboard_14355_pride_free.webp" alt="Бесплатный подарок" />
+              <div class="pack-info">
+                <h3>БЕСПЛАТНЫЙ ПОДАРОК</h3>
+                <p>БЕСПЛАТНО</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_11352_police_sniper.webp" alt="Оценщик угроз" />
+              <div class="pack-info">
+                <h3>ОЦЕНЩИК УГРОЗ</h3>
+                <p>1 300 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_11336_war_and_peace.webp" alt="Потерянное спокойствие" />
+              <div class="pack-info">
+                <h3>ПОТЕРЯННОЕ СПОКОЙСТВИЕ</h3>
+                <p>1 200 CP</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="starter">
+              <img src="./img/cer_bundle_billboard_11340_90s_hip_hop_artist.webp" alt="Свежеак" />
+              <div class="pack-info">
+                <h3>СВЕЖАК</h3>
+                <p>СТАРТОВЫЙ НАБОР</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="starter">
+              <img src="./img/cer_bundle_billboard_13362_mam_pack_3_5.webp" alt="Объединенные силы" />
+              <div class="pack-info">
+                <h3>ОБЪЕДИНЕННЫЕ СИЛЫ</h3>
+                <p>Набор C.O.D.E</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="tracer">
+              <img src="./img/cer_bundle_billboard_14310_anime_zombie.webp" alt="Реанимация" />
+              <div class="pack-info">
+                <h3>РЕАНИМАЦИЯ</h3>
+                <p>ДИНАМИЧЕСКИЙ НАБОР</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="team">
+              <img src="./img/cer_bundle_billboard_11361_cdl_team_pack_a.webp" alt="FAZE 2025" />
+              <div class="pack-info">
+                <h3>ATLANTA FAZE 2025</h3>
+                <p>КОМАНДА</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="team">
+              <img src="./img/cer_bundle_billboard_11364_cdl_team_pack_d.webp" alt="FAZE 2025" />
+              <div class="pack-info">
+                <h3>НАБОР КОМАНДЫ LOS ANGELES GUERRILLAS 2025</h3>
+                <p>КОМАНДА</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="team">
+              <img src="./img/cer_bundle_billboard_11366_cdl_team_pack_f.webp" alt="FAZE 2025" />
+              <div class="pack-info">
+                <h3>НАБОР КОМАНДЫ MIAMI HERETICS 2025</h3>
+                <p>КОМАНДА</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="team">
+              <img src="./img/cer_bundle_billboard_11367_cdl_team_pack_g.webp" alt="FAZE 2025" />
+              <div class="pack-info">
+                <h3>НАБОР КОМАНДЫ MINNESOTA ROKKR 2025</h3>
+                <p>КОМАНДА</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="team">
+              <img src="./img/cer_bundle_billboard_11368_cdl_team_pack_h.webp" alt="FAZE 2025" />
+              <div class="pack-info">
+                <h3>НАБОР КОМАНДЫ CLOUD9 NEW YORK 2025</h3>
+                <p>КОМАНДА</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="team">
+              <img src="./img/cer_bundle_billboard_11369_cdl_team_pack_i.webp" alt="FAZE 2025" />
+              <div class="pack-info">
+                <h3>НАБОР КОМАНДЫ VANCOUVER SURGE 2025</h3>
+                <p>КОМАНДА</p>
+              </div>
+            </div>
+            <div class="pack-card show" data-type="team">
+              <img src="./img/cer_bundle_billboard_11365_cdl_team_pack_e.webp" alt="FAZE 2025" />
+              <div class="pack-info">
+                <h3>НАБОР КОМАНДЫ LOS ANGELES THIEVES 2025</h3>
+                <p>КОМАНДА</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-links">
+          <span>ПРАВОВЫЕ ПОЛОЖЕНИЯ</span> |
+          <span>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</span> |
+          <span>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</span> | <span>КАРЬЕРА</span> |
+          <span>ПОЛИТИКА О ФАЙЛАХ COOKIE</span> |
+          <span>ПОДДЕРЖКА</span>
+        </div>
+        <div class="footer-sub">
+          <span>ПРАВИЛА ПОВЕДЕНИЯ</span> |
+          <span>ВАШ ВЫБОР КОНФИДЕНЦИАЛЬНОСТИ 🔵</span>
+        </div>
+      </div>
+      <div class="footer-logo-section">
+        <div class="footer-logos">
+          <a
+            href="https://www.activision.com/?utm_source=404&utm_medium=redirect&utm_campaign=092722"
+            ><img src="./img/activision.png" alt="Activision"
+          /></a>
+          <a href="https://www.treyarch.com/"
+            ><img src="./img/treyarch.png" alt="Treyarch"
+          /></a>
+          <a href="https://www.sledgehammergames.com/"
+            ><img src="./img/sledgehammer.png" alt="Sledgehammer"
+          /></a>
+          <a href="https://www.highmoonstudios.com/"
+            ><img src="./img/highmoon.png" alt="High Moon"
+          /></a>
+          <a href="https://www.digital-legends.com/"
+            ><img src="./img/digitallegend.png" alt="Digital Legends"
+          /></a>
+          <a href="https://www.activision.com/company/locations"
+            ><img src="./img/shanghai.png" alt="Shanghai Studio"
+          /></a>
+        </div>
+
+        <div class="footer-logos">
+          <a href="https://www.infinityward.com/"
+            ><img src="./img/infinityward.png" alt="Infinity Ward"
+          /></a>
+          <a href="http://ravensoftware.com/"
+            ><img src="./img/raven.png" alt="Raven Software"
+          /></a>
+          <a href="https://www.solidstate.com/"
+            ><img src="./img/solidstate.png" alt="Solid State Studios"
+          /></a>
+          <a href="https://www.demonware.net/"
+            ><img src="./img/demonware.png" alt="Demonware"
+          /></a>
+          <a href="https://beenox.com/"
+            ><img src="./img/beenox.png" alt="Beenox"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-age">
+        <img src="./img/18plus.png" alt="18+" />
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">
+          © 2024-2025 Activision Publishing, Inc. ACTIVISION, CALL OF DUTY, CALL
+          OF DUTY LEAGUE, CALL OF DUTY MODERN WARFARE, MODERN WARFARE, CALL OF
+          DUTY BLACK OPS, CALL OF DUTY WARZONE, WARZONE и CALL OF DUTY VANGUARD
+          являются зарегистрированными товарными знаками Activision Publishing,
+          Inc. Все остальные товарные знаки и торговые наименования принадлежат
+          соответствующим владельцам.
+        </p>
+        <div class="footer-lang"></div>
+      </div>
+    </footer>
+    <script src="./src/store.js"></script>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
