@@ -994,7 +994,9 @@ header {
     header {
         margin: 0;
         border-radius: 0;
-        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .burger {
@@ -1094,5 +1096,314 @@ header {
 
     .card-text h3 {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .burger {
+        display: flex;
+    }
+
+    .trailer-bo6 {
+        width: 50%;
+        height: auto;
+    }
+
+    .nav-desctop,
+    .buy-btn {
+        display: none !important;
+    }
+
+    .user-actions {
+        margin-left: auto;
+    }
+
+    .gif-logo {
+        margin-top: 100px;
+        max-width: 90%;
+    }
+
+    .btn-buy-bo6 {
+        margin: 30px 0;
+    }
+
+    .gif-subtitle {
+        padding: 15px;
+        max-width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .gif-subtitle h2 {
+        font-size: 24px;
+    }
+
+    .gif-subtitle h3 {
+        font-size: 20px;
+    }
+
+    .gif-subtitle p {
+        font-size: 14px;
+    }
+
+    .cod-season-promo {
+        padding: 20px 10px;
+    }
+
+    .headline {
+        font-size: 1.8rem;
+    }
+
+    .subhead {
+        font-size: 0.8rem;
+    }
+
+    .promo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .vault-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .vault-edition {
+        padding: 30px 10px;
+    }
+
+    .vault-title {
+        font-size: 2rem;
+    }
+
+    .vault-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .vault-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .vault-card {
+        font-size: 0.75rem;
+    }
+
+    .vault-button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .game-mods {
+        padding: 20px 10px;
+    }
+
+    .titleGameModsSection {
+        font-size: 24px;
+    }
+
+
+
+    .mod-card img {
+        max-width: 250px;
+    }
+
+    .mod-text h3 {
+        font-size: 18px;
+    }
+
+    .mod-text p {
+        font-size: 13px;
+    }
+
+    .new-ability {
+        padding: 15px;
+        min-height: 60vh;
+    }
+
+    .ability-overlay {
+        padding: 15px;
+    }
+
+    .ability-overlay h2 {
+        font-size: 20px;
+    }
+
+    .ability-overlay h2 span {
+        font-size: 22px;
+    }
+
+    .ability-overlay p {
+        font-size: 13px;
+    }
+
+    .gallery {
+        padding: 20px 10px;
+    }
+
+    .gallery-title {
+        font-size: 24px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .buy-bo6 {
+        padding: 20px 10px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-title::before,
+    .section-title::after {
+        width: 40px;
+    }
+
+    .section-title::before {
+        left: -50px;
+    }
+
+    .section-title::after {
+        right: -50px;
+    }
+
+    .edition {
+        width: 95%;
+    }
+}
+
+@media (max-width: 767px) {
+    .trailer-bo6 {
+            width: 70%;
+            height: auto;
+        }
+
+    .gif-logo {
+        margin-top: 80px;
+        max-width: 100%;
+    }
+
+    .gif-subtitle h2 {
+        font-size: 20px;
+    }
+
+    .gif-subtitle h3 {
+        font-size: 18px;
+    }
+
+    .gif-subtitle p {
+        font-size: 13px;
+    }
+
+    .headline {
+        font-size: 1.5rem;
+    }
+
+    .subhead {
+        font-size: 0.75rem;
+    }
+
+    .promo-card {
+        padding: 6px;
+    }
+
+    .vault-title {
+        font-size: 1.8rem;
+    }
+
+    .vault-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .vault-card {
+        font-size: 0.7rem;
+    }
+
+    .titleGameModsSection {
+        font-size: 20px;
+    }
+
+    .mod-card {
+        flex-direction: column;
+    }
+
+    .mod-card[data-direction="right"] {
+        flex-direction: column;
+    }
+
+    .mod-card img {
+        max-width: 200px;
+    }
+
+    .mod-text h3 {
+        font-size: 16px;
+    }
+
+    .mod-text p {
+        font-size: 12px;
+    }
+
+    .ability-overlay h2 {
+        font-size: 18px;
+    }
+
+    .ability-overlay h2 span {
+        font-size: 20px;
+    }
+
+    .ability-overlay p {
+        font-size: 12px;
+    }
+
+    .play-button {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .gallery-title {
+        font-size: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .video-title {
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-title::before,
+    .section-title::after {
+        width: 30px;
+    }
+
+    .section-title::before {
+        left: -40px;
+    }
+
+    .section-title::after {
+        right: -40px;
+    }
+
+    .footer-logos {
+        gap: 15px;
+    }
+
+    .footer-logos img {
+        height: 10px;
+    }
+
+    .footer-age img {
+        height: 30px;
+    }
+
+    .footer-bottom-text {
+        font-size: 10px;
     }
 }

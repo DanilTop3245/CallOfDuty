@@ -118,3 +118,10 @@ button:hover {
         opacity: 0.95;
     }
 }
+
+@media (max-width: 768px) {
+    .right {
+        flex: none;
+        width: 100% !important;
+    }
+}
